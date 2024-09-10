@@ -18,3 +18,12 @@ Coletar dados
 Processar os dados(manipular, alterar ...)  
 Apresentar os dados
 
+## Tipo de dados
+
+Strings (textos): "" '' ``  
+Number (numeros): 2  1.4  
+Function
+
+## Operadores
+
+Operador de atribuição de valor ( = )

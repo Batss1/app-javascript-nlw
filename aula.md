@@ -14,16 +14,39 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, resolve
 
 # Fases da resolução de um problema 
 
-Coletar dados  
-Processar os dados(manipular, alterar ...)  
-Apresentar os dados
+- Coletar dados  
+- Processar os dados(manipular, alterar ...)  
+- Apresentar os dados
+
+## Escopo e variáveis:
+- [x] Variáveis globais e locais
+- [x] Constantes
 
 ## Tipo de dados
 
-Strings (textos): "" '' ``  
-Number (numeros): 2  1.4  
-Function
+- [x] Strings (textos): "" '' ``  
+- [x] Number (numeros): 2  1.4  
+- [x] Boolean: true, false
 
 ## Operadores
 
-Operador de atribuição de valor ( = )
+- [x] Operador de atribuição de valor ( = )
+- [x] Operador de concatenação ( + )
+
+
+## Estruturas de dados 
+
+### Arrays:
+- [x] Uma lista que contém qualquer tipo de dado
+
+### Objetos:
+
+- [x] Atribui a métodos  
+- [x] Criação e manipulação de objetos  
+- [x] Acesso a propriedade de obejetos
+
+### Functions:
+
+- [x] Criar, passar argumento
+- [x] Executar
+- [x] Arrow function / named function

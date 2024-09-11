@@ -19,20 +19,21 @@ const cadastrarMeta = async () => {
     })
 }
 
-async function listarMetas(){
+const listarMetas = async () => {
     const respostas = await checkbox({
         message:"Use as setas para mudar de meta, o espaço para marcar ou desmarcar e o Enter para finalizar essa etapa", 
         instructions:false,
         choices: [...metas]
     })
-    if (respostas.length == 0){
-        console.log("Nenhuma meta selecionada!")
-        return
-    }
+
     metas.forEach((m) => {
         m.checked = false
     })
     
+    if (respostas.length == 0){
+        console.log("Nenhuma meta selecionada!")
+        return
+    }
     respostas.forEach((resposta) => {
         const meta = metas.find((m) => {
             return m.value == resposta

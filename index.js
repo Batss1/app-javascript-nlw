@@ -47,14 +47,27 @@ const metasRealizadas = async() => {
     const realizadas = metas.filter((meta) => {
         return meta.checked == true
     })   
-    if (metas.length == 0){
+    if (realizadas.length == 0){
         console.log('Não existem metas realizadas!')
         return
     }
 
     await select({
-        message: "Metas Realizadas",
+        message: "Metas Realizadas " + realizadas.length,
         choices: [...realizadas]
+    })
+}
+const metasPendentes = async () => {
+    const pendentes = metas.filter((meta) => {
+        return !meta.checked 
+    })
+    if (pendentes.length == 0){
+        console.log('Não existem metas pendentes!')
+        return
+    }
+    await select({
+        message: "Metas Pendentes " + pendentes.length,
+        choices: [...pendentes]
     })
 
 }
@@ -101,7 +114,8 @@ const start = async () => {
                 await metasRealizadas()
                 break
             case "pendentes":
-
+                await metasPendentes()
+                break
             case "sair":
                 console.log("Até a Próxima")
                 return

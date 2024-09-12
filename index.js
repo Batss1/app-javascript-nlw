@@ -18,6 +18,7 @@ const carregarMetas = async () => {
 const salvarMetas = async () => {
     await fs.writeFile("metas.json", JSON.stringify(metas, null, 2))
 }
+
 const cadastrarMeta = async () => {
     const meta = await input({ message: "Digite a meta: "})
 
@@ -197,4 +198,3 @@ const start = async () => {
 }
 
 start()
-salvarMetas()
